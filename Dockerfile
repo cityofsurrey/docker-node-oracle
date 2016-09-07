@@ -1,4 +1,4 @@
-FROM node:6.3.0
+FROM node:6.5.0
 
 RUN apt-get update && \
     apt-get install libaio1 build-essential unzip curl -y
