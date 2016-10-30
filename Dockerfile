@@ -1,5 +1,9 @@
-FROM node:6.5.0
+FROM node:7.0.0
 
+# INstall Yarn
+RUN npm install -g yarn
+
+# Install Oracle client
 RUN apt-get update && \
     apt-get install libaio1 build-essential unzip curl -y
 
