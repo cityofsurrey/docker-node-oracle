@@ -1,4 +1,6 @@
-FROM node:7.0.0
+FROM node:7.1.0
+
+ENV NPM_CONFIG_LOGLEVEL error
 
 # INstall Yarn
 RUN npm install -g yarn
