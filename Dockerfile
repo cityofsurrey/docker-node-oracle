@@ -1,4 +1,4 @@
-FROM node:7.7.4
+FROM node:7.7.3
 
 ENV NPM_CONFIG_LOGLEVEL error
 
