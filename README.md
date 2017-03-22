@@ -1,3 +1,3 @@
 # docker-node-oracle
 
-Docker image for nodejs oracle ready container
+Docker image for NodeJS + Oracle ready containers
