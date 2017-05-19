@@ -1,5 +1,6 @@
 FROM node:7.7.3
 
+ENV TZ=America/Vancouver
 ENV NPM_CONFIG_LOGLEVEL error
 
 # Install Oracle client
