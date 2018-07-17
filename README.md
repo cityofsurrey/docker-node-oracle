@@ -1,3 +1,3 @@
 # docker-node-oracle
 
-Docker image for NodeJS + Oracle ready containers
+Docker node oracle is a docker image generating containers for Node.js apps with OracleDB connection capability.
