@@ -1,4 +1,4 @@
-FROM node:10.10.0
+FROM node:11.12.0
 
 ENV NPM_CONFIG_LOGLEVEL error
 
@@ -12,6 +12,10 @@ RUN npm install -g node-gyp && \
     apt-get install libaio1 build-essential unzip curl -y && \
     unzip instantclient-basic-linux.x64-18.3.0.0.0dbru.zip && \
     rm instantclient-basic-linux.x64-18.3.0.0.0dbru.zip
+
+RUN DEBIAN_FRONTEND=noninteractive && \
+    DEBIAN_PRIORITY=critical && \
+    apt-get -q -y -o "Dpkg::Options::=--force-confold" dist-upgrade
 
 RUN sh -c "echo /opt/oracle/instantclient_18_3 > /etc/ld.so.conf.d/oracle-instantclient.conf" && \
     ldconfig
