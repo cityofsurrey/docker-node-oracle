@@ -1,4 +1,4 @@
-FROM node:21.1.0
+FROM node:21.4.0
 
 ENV NPM_CONFIG_LOGLEVEL error
 
